@@ -1,0 +1,34 @@
+{
+  "root": "slot",
+  "elements": {
+    "slot": { "type": "BriefingSlot", "props": {}, "children": ["sec-prep"] },
+    "sec-prep": {
+      "type": "BriefingSection",
+      "props": { "title": "14시 상담 준비", "reason": "14시 방문 상담 예정" },
+      "children": ["overview", "gap", "talk"]
+    },
+    "overview": {
+      "type": "CoverageOverview",
+      "props": { "customerId": "C0005", "highlight": ["cancer", "indemnity"], "reason": "40대 기준 가입 비중이 높은 보장" },
+      "children": []
+    },
+    "gap": {
+      "type": "CoverageGapCard",
+      "props": { "customerId": "C0005", "category": "cancer", "reason": "암 진단비 보장 없음" },
+      "children": []
+    },
+    "talk": {
+      "type": "TalkingPointCard",
+      "props": {
+        "topic": "갱신형 vs 비갱신형",
+        "points": [
+          "갱신형은 정해진 주기마다 보험료가 다시 산정될 수 있다",
+          "비갱신형은 납입 기간 동안 보험료가 같은 구조다",
+          "실제 조건은 해당 약관과 상품설명서로 확인한다"
+        ],
+        "reason": "고객 문의 가능성 높음"
+      },
+      "children": []
+    }
+  }
+}

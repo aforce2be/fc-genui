@@ -1,0 +1,15 @@
+{
+  "root": "slot",
+  "elements": {
+    "slot": { "type": "BriefingSlot", "props": {}, "children": ["summary"] },
+    "summary": {
+      "type": "CustomerSummaryCard",
+      "props": {
+        "customerId": "C0001",
+        "keyPoints": ["건강보험 갱신 3일 전", "실손·암 보장 보유", "지난 통화에서 보험료 문의"],
+        "reason": "14시 방문 예정"
+      },
+      "children": []
+    }
+  }
+}
