@@ -1,0 +1,42 @@
+{
+  "name": "fc-genui",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.15.0"
+  },
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "typecheck": "nuxt typecheck",
+    "test": "vitest run",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "4.0.107",
+    "@ai-sdk/vue": "4.0.179",
+    "@json-render/core": "0.22.0",
+    "@json-render/vue": "0.22.0",
+    "ai": "7.0.179",
+    "nuxt": "4.6.4",
+    "vue": "3.5.46",
+    "vue-router": "5.5.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@nuxt/eslint": "1.17.0",
+    "@nuxt/test-utils": "4.4.0",
+    "@playwright/test": "1.65.1",
+    "@vue/test-utils": "2.6.0",
+    "eslint": "10.15.0",
+    "happy-dom": "21.0.4",
+    "sass": "1.108.2",
+    "typescript": "~6.0.3",
+    "vitest": "5.1.1",
+    "vue-tsc": "3.3.14"
+  }
+}
